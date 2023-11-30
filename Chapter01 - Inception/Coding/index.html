@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="root">Hello World</div> -->
+    <div id="root"></div>
+    <!-- <script>
+      const heading = document.createElement('h1');
+      heading.innerHTML = 'Hellow world from Javascript';
+
+      const root = document.getElementById('root');
+      root.appendChild(heading);
+    </script> -->
+
+    <!-- React CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Updating using React -->
+    <script>
+      //   const heading = React.createElement('h1', {}, 'Hello world from react');
+      // Empty curly braces refer to the attribute of that tag like
+      const heading = React.createElement(
+        'h1',
+        { id: 'heading' },
+        'Hello world from react'
+      );
+
+      console.log(heading); // object
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+
+      root.render(heading);
+      // This method will convert object to html tag
+    </script>
+  </body>
+</html>
