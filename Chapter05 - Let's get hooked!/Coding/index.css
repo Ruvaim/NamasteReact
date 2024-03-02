@@ -1,0 +1,69 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.logo {
+  width: 100px;
+}
+.navItems {
+  padding: 8px 20px;
+}
+.navItems > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+.navItems > ul > li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
+}
+.resContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resCard {
+  width: 200px;
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid transparent;
+}
+.resCard:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.resLogo {
+  width: 100%;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search {
+  height: 30px;
+  width: 600px;
+}
+.search > input {
+  width: 80%;
+  border: 1px solid black;
+  height: 26px;
+}
+.search > input:focus {
+  outline: none;
+}
+
+.search > button {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  height: 100%;
+  width: 19%;
+}
