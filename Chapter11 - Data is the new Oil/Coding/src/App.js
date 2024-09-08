@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import RestaurantMenu from './components/RestaurantMenu';
 import Shimmer from './components/Shimmer';
 import UserContext from './utils/UserContext';
+import {Provider} from "react-redux"
 // import Grocery from './components/Grocery';
 
 const Grocery = lazy(() => import('./components/Grocery'));
